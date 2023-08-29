@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let XMLHttpRequest = require('xhr2');
+
+let xhr = new XMLHttpRequest();
+
+xhr.open('GET', 'https://restcountries.com/v3.1/all');
+
+xhr.onload = function () {
+    let users = JSON.parse(xhr.responseText);
+
+    for (let user of users) {
+        console.log(user['name']);
+        console.log(user['region']);
+        console.log(user['subregion']);
+        console.log(user['population']);
+
+    }
+};
+
+xhr.send()
+    </script>
+</body>
+</html>

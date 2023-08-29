@@ -1,0 +1,30 @@
+.contentWrapper {
+    background-image: url(./assets/bg.avif1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+    /* font-family: 'Numans', sans-serif, cursive; */
+}
+
+/* .bg {
+    background-image:  url(./assets/bg_image2.jpg);
+    background-size:  cover;
+    background-repeat: no-repeat;
+    height: 100%;
+} */
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #b577ba;
+}
+
+/* .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} */
+
+/* .body1 {
+    height: 100%;
+} */
